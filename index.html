@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deyvid Fernandes</title>
+    <script src="https://kit.fontawesome.com/dcf57934cf.js" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="nav">
+                <li class="nav__item"><a href="#inicio" class="nav__link">Ínicio</a></li>
+                <li class="nav__item"><a href="#sobre-mim" class="nav__link">Sobre mim</a></li>
+                <li class="nav__item"><a href="#habilidades" class="nav__link">Habilidades</a></li>
+                <li class="nav__item"><a href="#projetos" class="nav__link">Projetos</a></li>
+                <li class="nav__item"><a href="#footer" class="nav__link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <div id="inicio__content">
+                <div class="half">
+                    <p class="title">Olá, meu nome é Deyvid Fernandes</p>
+                    <p class="inicio__subtitle">Desenvolvedor fullstack</p>
+                    <p class="contentText inicio__contentText">Tenho 17 anos e meu objetivo é me tornar um desenvolvedor fullstack com foco em back-end, mas também tenho estudado o front-end.</p>
+                    <a href="#footer" class="linkButton">
+                        <span>Contato</span>
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+                <img src="resources/foto-blob.png" width="310px">
+                <div id="setinha">
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <span>Role para baixo!</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mim" >
+            <h2 class="title">Sobre Mim</h2>
+            <div class="sobre-mim-container">
+                <div class="circle">
+                    <img src="resources/logo.svg" height="260px">
+                </div>
+                <div id="sobre-mim__content" class="contentText">
+                    <p>Sempre tive interesse por tecnologia e quando tinha 14 anos entrei em contato com a programação pela primeira vez, com a linguagem Lua para desenvolver jogos.</p>
+                    <p>Desde essa época, minha paixão pelo desenvolvimento só aumentou. Por isso em 2023 decidi que era com isso que queria trabalhar e comecei a cursar o Técnico de Desenvolvimento de Sistemas na ETEC.</p>
+                    <a href="" class="linkButton">
+                        <span>Baixar CV</span>
+                        <i class="fa-regular fa-file-lines"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2 class="title">Habilidades</h2>
+            <div id="habilidades__container">
+
+                <ability-list>
+                    <h3>Front-end</h3>
+                    <ul id="frontend-list">
+                    </ul>
+                </ability-list>
+
+                <ability-list>
+                    <h3>Back-end</h3>
+                    <ul id="backend-list">
+                    </ul>
+                </ability-list>
+
+                <ability-list>
+                    <h3>Outras</h3>
+                    <ul id="other-list">
+                    </ul>
+                </ability-list>
+
+            </div>
+        </section>
+
+        <section id="projetos">
+            <button class="slide-arrow" id="slide-arrow-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="slide-arrow" id="slide-arrow-next"><i class="fa-solid fa-chevron-right"></i></button>
+            <h2>Projetos</h2>
+            <div class="slider-wrapper">
+                <ul class="slides-container" id="slides-container"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div id="footer_name">
+            <span>Deyvid</span>
+            <span>Fernandes</span>
+        </div>
+        <div id="line"></div>
+        <a href="https://www.linkedin.com/in/deyvid-fernandes-dev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/deyvidfernandes" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </footer>
+    <div></div>
+    <script src="ability.js"></script>
+    <script src="projects.js"></script>
+</body>
+</html>
+
